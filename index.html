@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+crossorigin=""/>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+crossorigin=""></script>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Himeji Castle</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+rel="stylesheet">
+
+<style>
+
+.section{
+    display:none;
+}
+
+.section.active{
+    display:block;
+}
+
+body{
+    background:#f5f5f5;
+}
+
+</style>
+
+<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+<body>
+
+<div class="container mt-4">
+
+<h1 class="text-center">
+Himeji Castle
+</h1>
+
+<div class="text-center my-4">
+
+<button class="btn btn-primary"
+onclick="showPage('home')">
+Home
+</button>
+
+<button class="btn btn-success"
+onclick="showPage('access')">
+Access
+</button>
+
+<button class="btn btn-warning"
+onclick="showPage('comment')">
+Comment
+</button>
+
+</div>
+
+
+
+<div id="home" class="section active">
+
+<div class="itimaido_nn">
+
+
+<img src="Himezi_tensyu.HEIC"
+     class="rounded d-block mx-auto"
+     alt="Computer"
+     width="700">
+
+<h1 class="text-center">
+ <h1 class="mb-3">History of Himeji Castle</h1>
+
+<table class="table table-striped table-dark">
+  <thead>
+    <tr>
+      <th>Years</th>
+      <th>Event</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td>1333</td>
+      <td>Akamatsu Norimura builds a fortress on Himeyama.</td>
+    </tr>
+
+    <tr>
+      <td>1580</td>
+      <td>Hashiba Hideyoshi took over the castle from Kuroda Yoshitaka and erected a three-story castle keep.</td>
+    </tr>
+
+    <tr>
+      <td>1600</td>
+      <td>After the Battle of Sekigahara, Ikeda Terumasa became the lord of the castle and initiated a major reconstruction project to create the large-scale fortress seen today.</td>
+    </tr>
+
+    <tr>
+      <td>1609</td>
+      <td>The five-story, seven-level connected castle keep was completed by Ikeda Terumasa.</td>
+    </tr>
+
+    <tr>
+      <td>1617</td>
+      <td>Honda Tadamasa entered the castle and expanded sections such as the Western Enclosure</td>
+    </tr>
+
+    <tr>
+      <td>1931</td>
+      <td>The castle keep is designated as a National Treasure.</td>
+    </tr>
+
+    <tr>
+      <td>1993</td>
+      <td>Registered as one of Japan's first World Cultural Heritage sites, alongside Horyu-ji Temple in Nara.</td>
+    </tr>
+  </tbody>
+</table>
+
+</h1>
+
+<img src="Himezi_stone.HEIC"
+     class="rounded d-block mx-auto"
+     alt="Computer"
+     width="700">
+
+ <h1 class="mb-3">Kuroda Kanbee</h1>
+<div class="container-lg stone"> In 1561, he entered the service of Kodera Masamoto. The following year, having earned Masamoto's trust, he adopted the name Kodera Kanbee. Around 1567, he succeeded his father, Mototaka, as head of the family and as a senior retainer; he also married Teru—the daughter of Kushihashi Sadasada and niece of Kodera Masamoto—and became the castellan of Himeji Castle.
+
+In 1577, he met Hashiba Hideyoshi, who was leading the Oda clan's campaign in the Chugoku region. Recognizing Kanbee's talent, Hideyoshi enlisted him as a military strategist. However, in 1578, when Araki Murashige rebelled against Oda Nobunaga, Kanbee traveled to Arioka Castle to persuade him to stand down but was instead taken prisoner. During his year-long captivity, he was deprived of adequate food and suffered lasting damage to his legs, leaving him with a permanent walking disability.
+
+When Oda Nobunaga was killed in the Honno-ji Incident in 1582, Kanbee conveyed the news to Hideyoshi, who was then confronting the Mori clan in the Chugoku region. At that moment, Kanbee remarked to Hideyoshi, "My lord, this is the very moment your fortune is destined to rise," a comment that reportedly instilled a sense of fear in Hideyoshi. He then proposed the "Great Retreat from Chugoku" (Chugoku Ogaeshi)—immediately concluding a peace treaty with the Mori clan and marching his army back. This swift decision-making is credited with paving the way for Hideyoshi to defeat Akechi Mitsuhide and ultimately become the ruler of Japan.
+
+Under the Toyotomi regime, Kanbee distinguished himself in campaigns such as the pacification of Kyushu. However, his exceptional strategic brilliance made Hideyoshi wary of him; consequently, he was granted a fief in Buzen Province (comprising parts of present-day eastern Fukuoka and northern Oita prefectures) worth only 120,000 *koku*—a domain size disproportionately small given his achievements. Following Hideyoshi's death in 1598, Kanbee took the tonsure and adopted the name "Kuroda Josui." This move was said to signify his intention to renounce ambition and spend the remainder of his life simply as a warrior. During the Battle of Sekigahara in 1600, while his eldest son and heir, Kuroda Nagamasa, joined the Eastern Army as a key figure under Tokugawa Ieyasu, Josui independently raised an army in Kyushu and captured various castles held by the Western Army. It is said that he harbored ambitions of seizing supreme power himself depending on the outcome of the conflict, but because Ieyasu’s victory was decided quickly, those plans never materialized. There is also a well-known anecdote regarding Nagamasa’s first meeting with Ieyasu: when Josui asked, "What were you doing with your left hand when you shook hands with Ieyasu?" and Nagamasa replied, "I was doing nothing in particular," Josui admonished him, saying, "You should have kept a short sword concealed in your left hand, ready to strike if the situation demanded it." This story illustrates Josui’s thorough commitment to crisis management.
+He passed away in Fushimi, Kyoto, in 1604 at the age of 59. Renowned for his exceptional strategic intellect and foresight as the "greatest military strategist of the Sengoku period," he remains a figure celebrated by history enthusiasts to this day. </div> 
+
+
+</div>
+
+</div>
+
+
+<div id="access" class="section">
+
+<h2>Access</h2>
+
+<div class="mappp mb-4">
+
+<div id="mapid"></div>
+
+</div>
+
+<table class="table table-striped table-dark">
+  <thead>
+    <tr>
+      <th>Train Stations ・ Bus Stops</th>
+      <th>How to go</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td>JR Himeji Station</td>
+      <td>Head north from the North Exit along Otemae-dori Street for approximately 1.6 km (about a 20-minute walk). Follow the road to arrive at the Ote-mon Gate of Himeji Castle.</td>
+    </tr>
+
+    <tr>
+      <td>Sanyo Himeji Station</td>
+      <td>Exit the station, head north, and proceed along Otemae-dori Street for approximately 1.4 km (about an 18-minute walk) to reach the Otemon Gate of Himeji Castle.</td>
+    </tr>
+
+    <tr>
+      <td>Himejijo Otemon Mae (Shinki Bus)</td>
+      <td>Proceed north from the bus stop for approximately 150 meters (about a 2-minute walk) to reach the main entrance of Himeji Castle.</td>
+    </tr>
+
+    <tr>
+      <td>Himejijo Otemon Mae (Himeji Castle Loop Bus)</td>
+      <td>Proceed north from the bus stop for approximately 150 meters (about a 2-minute walk) to reach the main entrance of Himeji Castle.</td>
+    </tr>
+
+    
+  </tbody>
+</table>
+
+</div>
+
+<script>
+
+function showPage(page){
+
+    document.querySelectorAll(".section").forEach(function(sec){
+        sec.classList.remove("active");
+    });
+
+    document.getElementById(page).classList.add("active");
+
+    if(page==="access"){
+        setTimeout(function(){
+            mymap.invalidateSize();
+        },100);
+    }
+
+}
+
+
+
+var mymap = L.map('mapid').setView([34.8392778, 134.6939972], 14);
+
+L.tileLayer(
+'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'
+).addTo(mymap);
+
+var circle = L.circle([34.8393778, 134.6940972],410,{color:'green',fillColor: '#cad', fillOpacity: 0.5 }).addTo(mymap);
+
+var marker1 = L.marker([34.83935, 134.693914]).addTo(mymap);
+
+marker1.bindPopup("Himeji Castle is one of the twelve Japanese castles that retain their original tenshu built in the early Edo period. Having survived events such as air raids during World War II, it stands as a valuable structure that preserves the legacy of its defensive functions and its role as a residence for daimyo. In recognition of its immense historical and cultural significance, it was designated a World Cultural Heritage site in 1993.").openPopup();
+
+
+var marker2 = L.marker([34.826758, 134.690513]).addTo(mymap);
+
+marker2.bindPopup("Himeji Station is a major transportation hub in western Hyogo Prefecture, served by the Sanyo Shinkansen and several JR lines. As the gateway to Himeji Castle, it welcomes millions of visitors every year. From the station, Otemae Street leads directly to the castle, offering a beautiful view of its iconic white keep.").openPopup();
+
+
+var marker3 = L.marker([34.828774, 134.689785]).addTo(mymap);
+
+marker3.bindPopup("Sanyo Himeji Station is the terminal station of the Sanyo Electric Railway and one of the main gateways to Himeji City. Located close to JR Himeji Station, it provides convenient access to Himeji Castle, which can be reached on foot in about 18 minutes. ");
+
+
+var marker4 = L.marker([34.835178, 134.693704]).addTo(mymap);
+
+marker4.bindPopup("Himejijo Otemon Mae:I can't think of anything to say.");
+
+
+</script>
+
+
+
+
+
+<div id="comment" class="section">
+
+<h2>Comment</h2>
+
+<div class="comennttt">
+I visited Himeji Castle during my second year of university. I was motivated to go because I was interested in the defensive features of castles and wanted to see an original castle keep. What I found particularly fascinating about Himeji Castle was the way the stone walls were constructed. There are three distinct masonry styles used for the walls: *nozurazumi* , *uchikomihagi* ,and *kirikomihagi* .
+
+
+<table class="table table-striped table-dark">
+  <thead>
+    <tr>
+      <th>Name of the stacking method</th>
+      <th>Features and Impressions</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td>Nozura-zumi</td>
+      <td>Nozura-zumi is the stacking method used when Hashiba Hideyoshi built the castle; it employs a diverse range of stone materials—such as tuff and chert—and incorporates numerous massive boulders and repurposed stones. It is characterized by a gentle, straight slope. My personal impression was that it embodies the quintessential look of a stone wall.</td>
+    </tr>
+
+    <tr>
+      <td>Uchikomi-hagi</td>
+      <td>Uchikomi-hagi section dates back to the castle's construction by Ikeda Terumasa; it features a high, soaring, curved profile known as the "fan-like slope", constructed primarily from dressed tuff blocks. The *sangi-zumi* masonry at the corner sections is largely complete. My impression was that the mere thought of having to scale this wall during an assault would be utterly demoralizing.</td>
+    </tr>
+
+    <tr>
+      <td>Kirikomi-hagi(Shinki Bus)</td>
+      <td>Kirikomi-hagi dressed-stone masonry was commissioned by Honda Tadamasa and represents the most recent style of stone wall construction. It is characterized by stones that have been shaped into rectangles using a chisel and stacked tightly together with no gaps. My personal impression is that the stones look like they would be comfortable to sit on.</td>
+    </tr>
+    
+  </tbody>
+</table>
+
+</div>
+
+</div>
+
+</div>
+
+
+</body>
+
+</html>
